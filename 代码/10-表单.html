@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 表单容器 -->
+  <form action="">
+    <!-- 输入标签 -->
+    <ul>
+      <li>
+        账号：<input type="text" placeholder="请输入账号" name="username" autocomplete="off" accesskey="s"><br>
+        密码：<input type="password" type="password" placeholder="请输入密码" name="password" autocomplete="off" maxlength="6">
+      </li>
+    </ul>
+    <input type="button" value="登录">
+    <ul>
+      <li>
+        <!-- label标签、for、id关联 -->
+        性别：
+        <input id="male" type="radio" name="gender" value="male" checked>
+        <label for="male">男</label>
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="female">女</label>
+      </li>
+      <li>
+        <!-- label标签直接包含 -->
+        爱好：
+        <label>
+          <input type="checkbox" name="hobby" value="sports">运动
+        </label>
+        <label>
+          <input type="checkbox" name="hobby" value="music">音乐
+        </label>
+        <label>
+          <input type="checkbox" name="hobby" value="reading">阅读
+        </label>
+
+      </li>
+      <!-- 文件域标签 -->
+      <li>
+        上传文件：<input type="file" name="file" multiple accept=".jpg,.png.pdf">
+        <input type="submit" value="上传">
+        <input type="reset" value="重置">
+      </li>
+      <!-- 文本域标签 -->
+      <li>
+        评论：<textarea name="comment" id="" cols="30" rows="10" placeholder="请输入评论"></textarea>
+      </li>
+      <!-- 下拉选择标签 -->
+      <li>
+        居住地：<select name="city" id="">
+          <option value="beijing">北京</option>
+          <option value="shanghai" selected>上海</option>
+          <option value="guangzhou">广州</option>
+          <option value="shenzhen">深圳</option>
+        </select>
+      </li>
+      <!-- 按钮标签 -->
+      <li>
+        <button disabled>提交</button>
+      </li>
+    </ul>
+
+  </form>
+
+</body>
+
+</html>
