@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div a {
+      color: red;
+    }
+
+    /* ul li a {
+      color: green;
+    } */
+    .nav li a {
+      color: pink;
+    }
+
+    .box>span {
+      color: blue;
+    }
+
+    .box>p>span {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 后代选择器：选择所有指定元素的后代元素 -->
+  <div>
+    <a href="#">关于我们</a>
+    <a href="#">联系我们</a>
+    <a href="#">加入我们</a>
+  </div>
+  <ul class="nav">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">排行</a></li>
+    <li><a href="#">分类</a></li>
+    <li><a href="#">推荐</a></li>
+  </ul>
+  <!-- 子代选择器：选择所有指定元素的直接子元素 -->
+  <div class="box">
+    <span>关于我们</span>
+    <span>联系我们</span>
+    <p>
+      <span>加入我们</span>
+    </p>
+  </div>
+</body>
+
+</html>
