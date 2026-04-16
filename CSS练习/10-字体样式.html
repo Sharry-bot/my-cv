@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red {
+      color: red;
+    }
+
+    .color16 {
+      color: #795a5a;
+    }
+
+    .rgb {
+      color: rgb(46, 172, 132);
+    }
+
+    /* 0是完全透明，1是完全不透明，0.5是半透明 */
+    .rgba {
+      color: rgba(255, 0, 0, 0.5);
+    }
+
+    .font {
+      font-family: '宋体';
+    }
+
+    .font12 {
+      font-size: 12px;
+    }
+
+    .font14 {
+      font-size: 14px;
+    }
+
+    .font16 {
+      font-size: 16px;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .normal {
+      font-style: normal;
+    }
+
+    .nobold {
+      /* font-weight: normal; */
+      font-weight: 400;
+    }
+
+    .bold {
+      /* font-weight: bold; */
+      font-weight: 700;
+    }
+
+    /* 字体装饰 */
+    a {
+      text-decoration: none;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .overline {
+      text-decoration: overline;
+    }
+
+    .line-through {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <h1>字体样式</h1> -->
+  <!-- <p class="red">字体颜色</p> -->
+  <p class="red">通过关键字设置字体颜色</p>
+  <p class="color16">通过十六进制设置字体颜色</p>
+  <p class="rgb">通过rgb设置字体颜色</p>
+  <p class="rgba">设置字体透明度</p>
+  <!-- 字体族 -->
+  <h2>设置字体族</h2>
+  <p class="font">字体族可以使用字体名称设置</p>
+  <!-- 字体大小 -->
+  <h2>设置字体大小</h2>
+  <p class="font12">字体大小可以使用px、em、rem等单位设置</p>
+  <p class="font14">字体大小可以使用px、em、rem等单位设置</p>
+  <p class="font16">字体大小可以使用px、em、rem等单位设置</p>
+  <!-- 字体倾斜 -->
+  <h2>设置字体倾斜</h2>
+  <p class="italic">字体倾斜可以使用font-style italic属性设置</p>
+  <em class="normal">字体样式取消倾斜可以用normal设置</em>
+  <!-- 字体粗细 -->
+  <h2 class="nobold">设置字体粗细</h2>
+  <p class="bold">字体粗细可以使用关键字设置</p>
+  <em class="bold">字体粗细可以用数字设置</em>
+  <!-- 字体装饰 -->
+  <h2>设置字体装饰</h2>
+  <p class="underline">下划线可以使用text-decoration underline属性设置</p>
+  <p class="overline">上划线可以用使用text-decoration overline属性设置</p>
+  <p class="line-through">删除线可以使用text-decoration line-through属性设置</p>
+  <a href="#">上划线可以用使用text-decoration overline属性设置</a>
+</body>
+
+</html>
