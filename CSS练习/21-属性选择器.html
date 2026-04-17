@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 1.选择包含属性的元素 */
+    /* a[class] {
+      color: red;
+    } */
+
+    /* 2.选择属性等于值的元素 完全匹配 */
+    /* a[class="font"] {
+      color: green;
+    } */
+    /* 3.选择属性值以xx开头的元素 */
+    /* a[class^="font"] {
+      color: pink;
+    } */
+
+    /* 4.选择属性值以xx结尾 */
+    /* a[class$=t14] {
+      color: blue;
+    } */
+
+    /* 5.选择属性值包含xx的元素 */
+    a[class*="font"] {
+      color: red;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      /* 去掉轮廓线 */
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">修改文字颜色</a><br>
+  <a href="#" class="font">修改文字颜色</a><br>
+  <a href="#" class="font14">修改文字颜色</a><br>
+  <a href="#" class="font16">修改文字颜色</a><br>
+  <a href="#" class="red">修改文字颜色</a><br>
+
+  <input type="text">
+  <input type="password">
+  <input type="checkbox">
+  <input type="radio">
+</body>
+
+</html>

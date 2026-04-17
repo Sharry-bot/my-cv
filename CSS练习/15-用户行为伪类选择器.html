@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 用户行为伪类选择器 */
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #badef5;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    /* 鼠标悬停元素 */
+    .box:hover {
+      background-color: #f00;
+      color: #fff;
+    }
+
+    .search {
+      width: 100px;
+      height: 30px;
+      border: 1px solid #000;
+    }
+
+    /* focus 获得焦点伪类 */
+    .search:focus {
+      background-color: #f00;
+      width: 250px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="box">
+    文字
+  </div>
+  <input type="text" class="search">
+</body>
+
+</html>
